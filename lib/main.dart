@@ -17,69 +17,22 @@ class LabClass05 extends StatelessWidget {
           backgroundColor: Colors.blue[400],
           centerTitle: true,
         ),
-        body: Container(
-          height: double.infinity,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.star,
-                size: 50,
+        body: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Container(
+            height: 600,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: List.generate(
+                100,
+                (index) => Icon(
+                  Icons.join_full_rounded,
+                  size: index.toDouble(),
+                  color: Color.fromARGB(255, 7, 41, 232),
+                ),
               ),
-              Icon(
-                Icons.star,
-                size: 50,
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-              ),
-              Icon(
-                Icons.star_outline,
-                size: 50,
-              ),
-            ],
+            ),
           ),
         ),
       ),
