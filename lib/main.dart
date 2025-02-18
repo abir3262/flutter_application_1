@@ -17,23 +17,58 @@ class LabClass05 extends StatelessWidget {
           backgroundColor: Colors.blue[400],
           centerTitle: true,
         ),
-        body: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Container(
-            height: 600,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: List.generate(
-                100,
-                (index) => Icon(
-                  Icons.join_full_rounded,
-                  size: index.toDouble(),
-                  color: Color.fromARGB(255, 7, 41, 232),
-                ),
-              ),
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Icon(
+              Icons.message,
+              size: 50,
+              color: const Color.fromARGB(255, 240, 9, 9),
             ),
-          ),
+            Icon(
+              Icons.message,
+              size: 50,
+              color: const Color.fromARGB(255, 240, 9, 9),
+            ),
+            Icon(
+              Icons.message,
+              size: 50,
+              color: const Color.fromARGB(255, 240, 9, 9),
+            ),
+            Row(
+              children: [
+                Icon(
+                  Icons.facebook,
+                  size: 50,
+                  color: const Color.fromARGB(244, 9, 63, 240),
+                ),
+                Icon(
+                  Icons.facebook,
+                  size: 50,
+                  color: const Color.fromARGB(255, 9, 70, 240),
+                ),
+                Column(
+                  children: [
+                    Icon(
+                      Icons.message,
+                      size: 50,
+                      color: const Color.fromARGB(255, 240, 9, 9),
+                    ),
+                    Icon(
+                      Icons.message,
+                      size: 50,
+                      color: const Color.fromARGB(255, 240, 9, 9),
+                    ),
+                    Icon(
+                      Icons.message,
+                      size: 50,
+                      color: const Color.fromARGB(255, 240, 9, 9),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
