@@ -18,10 +18,10 @@ class LabClass05 extends StatelessWidget {
           centerTitle: true,
         ),
         body: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
+          scrollDirection: Axis.vertical,
           child: Container(
-            height: 600,
-            child: Row(
+          
+            child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: List.generate(
