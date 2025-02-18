@@ -19,7 +19,7 @@ class LabClass05 extends StatelessWidget {
         ),
         body: Container(
           height: double.infinity,
-          child: Row(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
